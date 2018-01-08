@@ -19,12 +19,12 @@ layout: default
   </ul>
   
   <ul class="post-list">
-    {% for post in site.projectpost %}
+    {% for post2 in site.projectpost %}
       <li>
         
 
         <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;&#45;&nbsp;<small><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></small>
+          <a class="post-link" href="{{ post2.url | prepend: site.baseurl }}">{{ post2.title }}</a>&nbsp;&#45;&nbsp;<small><span class="post-meta">{{ post2.date | date: "%b %-d, %Y" }}</span></small>
         </h3>
       </li>
     {% endfor %}
